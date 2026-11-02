@@ -14,7 +14,9 @@
   h1 { font-size: 1.9rem; line-height: 1.2; font-weight: normal; margin: 0 0 12px; }
   .lede { color: var(--soft); margin: 0 0 36px; }
   ol { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
-  li { padding: 22px 0; border-bottom: 1px solid var(--rule); }
+  li { padding: 22px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 150px 1fr; gap: 22px; align-items: start; }
+  li img { width: 150px; height: auto; display: block; border: 1px solid var(--rule); background: var(--rule); }
+  @media (max-width: 520px) { li { grid-template-columns: 110px 1fr; gap: 16px; } li img { width: 110px; } }
   li h2 { font-size: 1.25rem; font-weight: normal; margin: 0 0 4px; }
   li p { margin: 0 0 10px; color: var(--soft); }
   a { color: inherit; }
@@ -31,19 +33,28 @@
 
   <ol>
     <li>
+      <a href="portal-saigon/"><img src="media/portal-saigon.gif" width="260" height="427" loading="lazy" alt="Screen recording of Portal to Saigon on a phone: a door opens in an office onto a reconstructed street vendor's cart."></a>
+      <div>
       <h2>Portal to Saigon</h2>
       <p>A doorway that opens onto a Gaussian splat reconstruction of a tofu vendor's cart.</p>
       <a class="open" href="portal-saigon/">Open Portal to Saigon</a>
+      </div>
     </li>
     <li>
+      <a href="audio-vendor/"><img src="media/footscray-sensory.gif" width="260" height="427" loading="lazy" alt="Screen recording of the Footscray prototype on a phone: a red plastic stool from a reconstructed vendor cart is picked up and placed in a Footscray street."></a>
+      <div>
       <h2>The Vendor Cart as Sensory Assemblage, Footscray</h2>
       <p>A vendor cart assembled from food, stools and objects that respond to touch, with its soundscape.</p>
       <a class="open" href="audio-vendor/">Open the Footscray prototype</a>
+      </div>
     </li>
     <li>
+      <a href="sky-vendor/"><img src="media/richmond-sky.gif" width="260" height="435" loading="lazy" alt="Screen recording of the Richmond prototype on a phone: a reconstructed vendor scene appears under a changed sky above Victoria Street, Richmond."></a>
+      <div>
       <h2>Nostalgia in Little Saigon, Richmond</h2>
       <p>A reconstructed vendor presence placed among the shopfronts of Victoria Street, Richmond.</p>
       <a class="open" href="sky-vendor/">Open the Richmond prototype</a>
+      </div>
     </li>
   </ol>
 
